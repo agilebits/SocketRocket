@@ -44,6 +44,9 @@
 #error SocketRocket must be compiled with ARC enabled
 #endif
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wimplicit-retain-self"
+
 __attribute__((used)) static void importCategories()
 {
     import_NSURLRequest_SRWebSocket();

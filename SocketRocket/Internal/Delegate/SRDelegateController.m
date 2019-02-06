@@ -19,6 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wimplicit-retain-self"
+
 @implementation SRDelegateController
 
 @synthesize delegate = _delegate;
